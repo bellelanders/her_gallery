@@ -1,0 +1,91 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import './colors.css';
+
+
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding:0;
+    font-family: Montserrat;
+}
+body{
+    background-color:var(--lightblue);
+    min-height: calc(100vh- 5rem);
+    position:relative;
+    padding-bottom:5rem !important ;
+    display: inline-block;
+    width: 100%;
+}
+nav{
+    background-color: var(--blue);
+
+}
+nav .title{
+    padding: 0.75rem ;
+    padding-left: 0px;
+    color:var(--white);
+    text-decoration: none;
+    display: inline-block;
+}
+nav .log{
+    height:1.75rem;
+    margin-left: 0.75rem;
+}
+nav form{
+    display: inline;
+    float:right;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+nav  .search{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.25rem 0.75rem;
+}
+nav .search:focus{
+    outline:none !important;
+    border:1px solid var(--blue);
+}
+.heading{
+    text-align:center;
+    margin: 1.75rem;
+    color:var(--blue)
+}
+footer{
+    position: absolute;
+    bottom:0px;
+    background-color: var(--blue);
+    width: cal(100%-1.5rem);
+    padding:0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:830px){
+    footer h1{
+        display:none;
+    }
+    footer{
+        flex-direction:column;
+    }
+    body{
+        min-height: calc(100vh - 10rem) !important;
+        padding-bottom: 10rem !important;
+    }
+}
+
+@media screen and (max-width:750px){
+    nav{
+        display: inline-block;
+        width: 100%;
+    }
+    nav form{
+        float: none;
+        display: flex;
+        gap:0.75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+}

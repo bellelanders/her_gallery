@@ -1,0 +1,66 @@
+@import './colors.css';
+
+
+.detail{
+    padding:0.5rem;
+
+}
+
+.img .content{
+    width:45vw;
+    float: right;
+    margin-left:0.5rem ;
+}
+
+.detail .img_color{
+    width: 12rem;
+    height: 4.5rem;
+    padding:0.75rem;
+    border: 2px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail img{
+    max-width:calc(45vw- 5rem);
+    padding:0.75rem;
+    border: 4px solid transparent;
+
+}
+
+.detail .description::first-letter{
+    text-transform: uppercase;
+}
+
+.img_color span{
+    border: 2px solid var(--gray);
+    padding: 0.75rem;
+    text-transform: uppercase;
+}
+
+.button{
+    text-decoration: none;
+    color: rgb(19, 209, 238);
+    padding: 1rem;
+    border:2px solid lightblue;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: rgb(125, 123, 247);
+    background-color: rgb(98, 206, 243);
+}
+
+@media screen and (max-width:800px) {
+    .detail img{
+        max-width: calc(90vw- 5rem);
+        margin-left: calc(5vw+0.5rem);
+
+    }
+    .detail .content{
+        width: calc(90vw- 5rem);
+        margin-top: 3rem;
+        float: left;
+        margin-left: calc(5vw - 0.5rem);
+    }
+}
